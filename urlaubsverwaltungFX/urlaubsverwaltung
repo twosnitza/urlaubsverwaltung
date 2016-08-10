@@ -1,0 +1,71 @@
+show connections;
+
+CREATE TABLE mitarbeiter (
+mit_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+nie_ID int,
+name varchar (50) NOT NULL,
+vorname varchar (20) NOT NULL,
+urlaub int NOT NULL,
+resturlaub int NOT NULL,
+urlaubgesamt int NOT NULL,
+vertretung varchar (50),
+PRIMARY KEY (mit_ID),
+FOREIGN KEY (nie_ID) REFERENCES niederlassung (nie_ID)
+);
+
+CREATE TABLE niederlassung (
+nie_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+ort varchar (50),
+PRIMARY KEY (nie_ID)
+);
+
+CREATE TABLE art_urlaub (
+art_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+ort varchar (50),
+PRIMARY KEY (art_ID)
+);
+
+CREATE TABLE vorgesetzter (
+vor_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+name varchar (50),
+vorname varchar (20),
+PRIMARY KEY (vor_ID)
+);
+
+CREATE TABLE mit_zu_vor (
+mit_ID int REFERENCES mitarbeiter (mit_ID),
+vor_ID int REFERENCES vorgesetzter (vor_ID),
+PRIMARY KEY (mit_ID, vor_ID)
+);
+
+CREATE TABLE abwesenheit (
+abw_ID int NOT NULL GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),
+mit_ID int,
+art_ID int,
+vor_ID int,
+von_datum date NOT NULL,
+bis_datum date NOT NULL,
+tage int NOT NULL,
+PRIMARY KEY (abw_ID),
+FOREIGN KEY (mit_ID) REFERENCES mitarbeiter (mit_ID),
+FOREIGN KEY (art_ID) REFERENCES art_urlaub (art_ID),
+FOREIGN KEY (vor_id) REFERENCES vorgesetzter (vor_ID)
+);
+
+INSERT INTO mitarbeiter (name, vorname, urlaub, resturlaub, urlaubgesamt)
+VALUES ('Wosnitza', 'Timo', 14, 4, 4);
+
+INSERT INTO mitarbeiter (name, vorname, urlaub, resturlaub, urlaubgesamt)
+VALUES ('Hanschke', 'Olha', 28, 0, 28);
+
+SELECT * FROM mitarbeiter;
+
+dblook;
+
+describe mitarbeiter;
+
+DROP TABLE mitarbeiter;
+
+ALTER TABLE mitarbeiter ALTER COLUMN urlaub SET DATA TYPE DOUBLE;
+ALTER TABLE mitarbeiter MODIFY resturlaub double;
+ALTER TABLE mitarbeiter MODIFY urlaubgesamt double;

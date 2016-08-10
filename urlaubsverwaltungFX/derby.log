@@ -1,0 +1,32 @@
+----------------------------------------------------------------
+Thu Jul 21 12:23:41 CEST 2016:
+Booten von Derby-Version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): Instanz a816c00e-0156-0cfb-73d0-000000aabce8
+für Datenbankverzeichnis E:\Workspaces Eclipse Netbeans IntelliJ\projektarbeit\urlaubsverwaltungFX\urlaubsverwaltungDB mit Class Loader sun.misc.Launcher$AppClassLoader@1d16e93
+Geladen aus file:/E:/eclipse/db-derby-10.12.1.1-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=E:\Workspaces Eclipse Netbeans IntelliJ\projektarbeit\urlaubsverwaltungFX
+os.name=Windows 10
+os.arch=x86
+os.version=10.0
+derby.system.home=null
+Datenbank-Class Loader wurde gestartet - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Jul 21 12:23:43 CEST 2016:
+Instanz a816c00e-0156-0cfb-73d0-000000aabce8 im Datenbankverzeichnis E:\Workspaces Eclipse Netbeans IntelliJ\projektarbeit\urlaubsverwaltungFX\urlaubsverwaltungDB mit Class Loader sun.misc.Launcher$AppClassLoader@1d16e93 wird heruntergefahren
+----------------------------------------------------------------
+Thu Jul 21 12:23:52 CEST 2016:
+Booten von Derby-Version The Apache Software Foundation - Apache Derby - 10.12.1.1 - (1704137): Instanz 08264012-0156-0cfb-73d0-000000aabce8
+für Datenbankverzeichnis E:\Workspaces Eclipse Netbeans IntelliJ\projektarbeit\urlaubsverwaltungFX\urlaubsverwaltungDB mit Class Loader sun.misc.Launcher$AppClassLoader@1d16e93
+Geladen aus file:/E:/eclipse/db-derby-10.12.1.1-bin/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_101-b13
+user.dir=E:\Workspaces Eclipse Netbeans IntelliJ\projektarbeit\urlaubsverwaltungFX
+os.name=Windows 10
+os.arch=x86
+os.version=10.0
+derby.system.home=null
+Datenbank-Class Loader wurde gestartet - derby.database.classpath=''
+----------------------------------------------------------------
+Thu Jul 21 12:23:53 CEST 2016:
+Instanz 08264012-0156-0cfb-73d0-000000aabce8 im Datenbankverzeichnis E:\Workspaces Eclipse Netbeans IntelliJ\projektarbeit\urlaubsverwaltungFX\urlaubsverwaltungDB mit Class Loader sun.misc.Launcher$AppClassLoader@1d16e93 wird heruntergefahren
